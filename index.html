@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make a memory card game</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="wrapper">
+    <ul class="cards">
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-1.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-6.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-3.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-2.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-1.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-5.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-2.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-6.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-3.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-4.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-5.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-4.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-4.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-4.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-4.png" alt="card-img">
+        </div>
+      </li>
+
+      <li class="card">
+        <div class="view front-view">
+          <img src="pictures/que_icon.svg" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="pictures/img-4.png" alt="card-img">
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    const cards = documents.querySelectorAll(".card");
+
+    let matched = 0;
+    let cardOne, cardTwo;
+    let disableDeck = false;
+
+    function flipCard({target: clickedCard}) {
+      if(cardOne !== clickedCard && !disableDeck) {
+        clickedCard.classList.add("flip");
+        if(!cardone){
+          return cardOne = clickedCard;
+        }
+        cardTwo = clickedCard;
+        disableDeck = true;
+        let cardOneImg = cardOne.querySelector(".bck-view img").src,
+        cardTwoImg = cardTwo.querySelector(".back-view img").src;
+        matchCards(cardOneImg, cardTwoImg)
+      }
+    }
+  </script>
+
+
+</body>
+</html>
